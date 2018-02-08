@@ -10,7 +10,7 @@ To use this class, you need Curl!
 	`require_once 'vkCoverClass.php';`
 2. Create VK object
 	
-	`$vk = new coverVk ({GROUP_ID}, {TOKEN});`
+	`$vk = new CoverVK ({GROUP_ID}, {TOKEN});`
 3. Get a link for downloading the cover
 
 	`$url = $vk->getCoverUrl({CROP_X}, {CROP_Y}, {CROP_X2}, {CROP_Y2});`
@@ -24,7 +24,7 @@ To use this class, you need Curl!
 
 	`require_once 'vkCoverClass.php';`
 
-	`$vk = new coverVk ('100367807','TlpaIQ4EHnOxUxUmdq7ttclTzql');`
+	`$vk = new CoverVK ('100367807','TlpaIQ4EHnOxUxUmdq7ttclTzql');`
 
 	`$url = $vk->getCoverUrl(0, 0, 1590, 400);`
 

@@ -8,7 +8,7 @@
  * To use this class, you need Curl!
  */
 
-class coverVk {
+class CoverVK {
 	private $groupId, $token;
 
 	/**
@@ -51,17 +51,17 @@ class coverVk {
 
 	/**
 	 * 
-	 * Uploads photos
+	 * Uploads photo
 	 * 
 	 * @param  string $uploadUrl - Link to upload photos
 	 * @param  string $photo - Photo
 	 * @param  string $mimeType - Mime type photo
 	 * @return array - Array with hash data and photo
 	 */
-	public function uploadPhoto ($uploadUrl, $photo, $mimeType = 'no')
+	public function uploadPhoto ($uploadUrl, $photo, $mimeType = false)
 	{
 		
-		if($mimeType == 'no')
+		if($mimeType == false)
 		{
 			$mimeType = mime_content_type($photo);
 		}
