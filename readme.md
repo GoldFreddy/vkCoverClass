@@ -20,7 +20,7 @@ To use this class, you need Curl!
 5. Set the cover to your group
 
 	`$vk->installCover($load['hash'], $load['photo']);`
-## Exemple
+## Example
 
 	`require_once 'vkCoverClass.php';`
 
