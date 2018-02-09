@@ -49,7 +49,7 @@ To use this class, you need Curl!
 
 	{CROP_Y2} - The Y coordinate of the lower right corner for cropping an image.
 
-	{PHOTO} - Name of the cover file
+	{PHOTO} - Path to cover file
 ## MIT License
 
 Copyright (c) 2018 GoldFreddy

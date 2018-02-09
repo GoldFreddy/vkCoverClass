@@ -34,7 +34,7 @@ class CoverVK {
 	 * @param integer $cropY2 - Y-coordinate of the lower-right corner for image cropping, default 200
 	 * @return string - Returns a link to load the cover
 	 */
-	public function getCoverUrl ($cropX = 0, $cropY = 0, $cropX2 = 795, $cropY2 = 200)
+	public function getCoverUrl ($cropX = 0, $cropY = 0, $cropX2 = 1590, $cropY2 = 400)
 	{
 		$params = http_build_query([
 			'group_id' => $this->groupId,
@@ -113,9 +113,9 @@ class CoverVK {
 		} elseif (!isset($params['crop_y'])) {
 			$params['crop_y'] = 0;
 		} elseif (!isset($params['crop_x2'])) {
-			$params['crop_x2'] = 795;
+			$params['crop_x2'] = 1590;
 		} elseif (!isset($params['crop_y2'])) {
-			$params['crop_y2'] = 200;
+			$params['crop_y2'] = 400;
 		} elseif (!isset($params['photo'])) {
 			return 'Error, you did not specify a photo';
 			exit;
