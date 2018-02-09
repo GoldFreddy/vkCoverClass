@@ -7,19 +7,19 @@ To use this class, you need Curl!
 
 1. Require Class
 
-	require_once 'vkCoverClass.php';
+	`require_once 'vkCoverClass.php';`
 2. Create VK object
 	
-	$vk = new CoverVK ({GROUP_ID}, {TOKEN});
+	`$vk = new CoverVK ({GROUP_ID}, {TOKEN});`
 3. Get a link for downloading the cover
 
-	$url = $vk->getCoverUrl({CROP_X}, {CROP_Y}, {CROP_X2}, {CROP_Y2});
+	`$url = $vk->getCoverUrl({CROP_X}, {CROP_Y}, {CROP_X2}, {CROP_Y2});`
 4. Download the cover to the VK server
 	
-	$load = $vk->uploadPhoto($url, {PHOTO});
+	`$load = $vk->uploadPhoto($url, {PHOTO});`
 5. Set the cover to your group
 
-	`$vk->installCover($load['hash'], $load['photo']);
+	`$vk->installCover($load['hash'], $load['photo']);`
 ## Example
 
 	require_once 'vkCoverClass.php';
