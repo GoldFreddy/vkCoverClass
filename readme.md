@@ -20,6 +20,10 @@ To use this class, you need Curl!
 5. Set the cover to your group
 
 	`$vk->installCover($load['hash'], $load['photo']);`
+
+	Or you can use the autoInstallCover function which will automatically receive a link to load the cover, load the cover to the VK server, and install it into the group
+
+	`$vk->autoInstallCover(['photo' => {PHOTO}, 'crop_x' => {CROP_X}, 'crop_y' => {CROP_Y}, 'crop_x2' => {CROP_X2}, 'crop_y2' => {CROP_Y2}]);`
 ## Example
 
 	require_once 'vkCoverClass.php';
