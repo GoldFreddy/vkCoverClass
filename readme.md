@@ -22,15 +22,15 @@ To use this class, you need Curl!
 	`$vk->installCover($load['hash'], $load['photo']);`
 ## Example
 
-	`require_once 'vkCoverClass.php';`
+	require_once 'vkCoverClass.php';
 
-	`$vk = new CoverVK ('100367807','TlpaIQ4EHnOxUxUmdq7ttclTzql');`
+	$vk = new CoverVK ('100367807','TlpaIQ4EHnOxUxUmdq7ttclTzql');
 
-	`$url = $vk->getCoverUrl(0, 0, 1590, 400);`
+	$url = $vk->getCoverUrl(0, 0, 1590, 400);
 
-	`$load = $vk->uploadPhoto($url, 'cover.png');`
+	$load = $vk->uploadPhoto($url, 'cover.png');
 
-	`$vk->installCover($load['hash'], $load['photo']);`
+	$vk->installCover($load['hash'], $load['photo']);
 ## Variables
 
 	{GROUP_ID} - Group Numeric Id
