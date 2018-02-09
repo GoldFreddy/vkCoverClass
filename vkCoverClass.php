@@ -97,4 +97,71 @@ class CoverVK {
 		]);
 		return json_decode(file_get_contents('https://api.vk.com/method/photos.saveOwnerCoverPhoto?'.$data));
 	}
+	
+	/**
+	 *
+	 * Auto install cover
+	 * 
+	 * @param  array $params - Array data
+	 * @return json - Json response
+	 */
+	public function autoInstallCover ($params)
+	{
+		if(!isset($params['crop_x']))
+		{
+			$params['crop_x'] = 0;
+		} elseif (!isset($params['crop_y'])) {
+			$params['crop_y'] = 0;
+		} elseif (!isset($params['crop_x2'])) {
+			$params['crop_x2'] = 795;
+		} elseif (!isset($params['crop_y2'])) {
+			$params['crop_y2'] = 200;
+		} elseif (!isset($params['photo'])) {
+			return 'Error, you did not specify a photo';
+			exit;
+		} elseif (!isset($params['mime'])) {
+			$params['mime'] = mime_content_type($params['photo']);
+		}
+		$photo = $params['photo'];
+		$mime = $params['mime'];
+
+		$params = http_build_query([
+			'group_id' => $this->groupId,
+			'crop_x' => $params['crop_x'],
+			'crop_y' => $params['crop_y'],
+			'crop_x2' => $params['crop_x2'],
+			'crop_y2' => $params['crop_y2'],
+			'access_token' => $this->token,
+			'v' => '5.69'
+		]);
+		$data = json_decode(file_get_contents("https://api.vk.com/method/photos.getOwnerCoverPhotoUploadServer?".$params));
+
+		if (!isset($data->response))
+		{
+			return $data->error->error_msg;
+			exit;
+		} else {
+			$uploadUrl = $data->response->upload_url;
+		}
+
+		$data = [
+			'photo' => new CURLFile($photo, $mime)
+		];
+
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $uploadUrl);
+		curl_setopt($ch, CURLOPT_POST, true);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+		$data = json_decode(curl_exec($ch), true);
+
+		$config = http_build_query([
+			'hash' => $data['hash'],
+			'photo' => $data['photo'],
+			'access_token' => $this->token
+		]);
+		return json_decode(file_get_contents('https://api.vk.com/method/photos.saveOwnerCoverPhoto?'.$config));
+	}
 }
