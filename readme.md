@@ -46,12 +46,24 @@ To use this class, you need Curl!
 	{CROP_Y2} - The Y coordinate of the lower right corner for cropping an image.
 
 	{PHOTO} - Name of the cover file
-## License
+## MIT License
 
-	Copyright (c) 2018 GoldFreddy
+Copyright (c) 2018 GoldFreddy
 
-	This license is authorized by the person who has received a copy of this software and related documentation (hereinafter referred to as the "Software"), to use the Software without restriction, including unlimited right to use, copy, modify, merge, publish, distribute, sublicense and / or sale of copies of the Software, as well as persons to whom this Software is provided, subject to the following conditions:
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
 
-	The above copyright notice and these conditions must be included in all copies or significant portions of this Software.
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
 
-	THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, BUT NOT LIMITED TO THEM. IN NO EVENT SHALL AUTHORS OR LEGAL ENTITIES BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHERWISE, INCLUDING WITH THE CONTRACT, TORT OR OTHERWISE ARISING OUT OF THE USE OF THE SOFTWARE OR OTHERWISE WITH THE SOFTWARE.
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
