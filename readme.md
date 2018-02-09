@@ -32,6 +32,7 @@ To use this class, you need Curl!
 
 	`$vk->installCover($load['hash'], $load['photo']);`
 ## Variables
+
 	`{GROUP_ID}` - Group Numeric Id
 
 	`{TOKEN}` - User Token with rights photos
@@ -46,6 +47,7 @@ To use this class, you need Curl!
 
 	`{PHOTO}` - Name of the cover file
 ## License
+
 	`Copyright (c) 2018 GoldFreddy`
 
 	`This license is authorized by the person who has received a copy of this software and related documentation (hereinafter referred to as the "Software"), to use the Software without restriction, including unlimited right to use, copy, modify, merge, publish, distribute, sublicense and / or sale of copies of the Software, as well as persons to whom this Software is provided, subject to the following conditions:`
