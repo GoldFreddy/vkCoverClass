@@ -33,25 +33,25 @@ To use this class, you need Curl!
 	`$vk->installCover($load['hash'], $load['photo']);`
 ## Variables
 
-	`{GROUP_ID}` - Group Numeric Id
+	{GROUP_ID} - Group Numeric Id
 
-	`{TOKEN}` - User Token with rights photos
+	{TOKEN} - User Token with rights photos
 
-	`{CROP_X}` - The X coordinate of the upper-left corner for cropping an image.
+	{CROP_X} - The X coordinate of the upper-left corner for cropping an image.
 
-	`{CROP_Y}` - The Y coordinate of the upper-left corner for cropping an image.
+	{CROP_Y} - The Y coordinate of the upper-left corner for cropping an image.
 
-	`{CROP_X2}` - The X coordinate of the lower right corner for cropping an image.
+	{CROP_X2} - The X coordinate of the lower right corner for cropping an image.
 
-	`{CROP_Y2}` - The Y coordinate of the lower right corner for cropping an image.
+	{CROP_Y2} - The Y coordinate of the lower right corner for cropping an image.
 
-	`{PHOTO}` - Name of the cover file
+	{PHOTO} - Name of the cover file
 ## License
 
-	`Copyright (c) 2018 GoldFreddy`
+	Copyright (c) 2018 GoldFreddy
 
-	`This license is authorized by the person who has received a copy of this software and related documentation (hereinafter referred to as the "Software"), to use the Software without restriction, including unlimited right to use, copy, modify, merge, publish, distribute, sublicense and / or sale of copies of the Software, as well as persons to whom this Software is provided, subject to the following conditions:`
+	This license is authorized by the person who has received a copy of this software and related documentation (hereinafter referred to as the "Software"), to use the Software without restriction, including unlimited right to use, copy, modify, merge, publish, distribute, sublicense and / or sale of copies of the Software, as well as persons to whom this Software is provided, subject to the following conditions:
 
-	`The above copyright notice and these conditions must be included in all copies or significant portions of this Software.`
+	The above copyright notice and these conditions must be included in all copies or significant portions of this Software.
 
-	`THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, BUT NOT LIMITED TO THEM. IN NO EVENT SHALL AUTHORS OR LEGAL ENTITIES BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHERWISE, INCLUDING WITH THE CONTRACT, TORT OR OTHERWISE ARISING OUT OF THE USE OF THE SOFTWARE OR OTHERWISE WITH THE SOFTWARE.`
+	THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, BUT NOT LIMITED TO THEM. IN NO EVENT SHALL AUTHORS OR LEGAL ENTITIES BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHERWISE, INCLUDING WITH THE CONTRACT, TORT OR OTHERWISE ARISING OUT OF THE USE OF THE SOFTWARE OR OTHERWISE WITH THE SOFTWARE.
